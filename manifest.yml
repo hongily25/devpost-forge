@@ -1,0 +1,21 @@
+permissions:
+    scopes:
+      - 'write:jira-work'
+      - 'read:jira-work'
+modules:
+  'jira:issuePanel':
+    - key: codegeist2020-hello-world-panel
+      function: main
+      title: codegeist2020
+      description: A hello world issue panel.
+  function:
+    - key: main
+      handler: index.run
+  trigger:
+    - key: issue-created-event
+      function: main
+      events:
+        - avi:activity:created:issue
+app:
+  id: 'ari:cloud:ecosystem::app/f6626046-1201-47ee-b7ee-335142b207cd'
+  name: codegeist2020
