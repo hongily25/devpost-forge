@@ -16,6 +16,6 @@
     "@forge/api": "^0.3.0",
     "@forge/ui": "^0.3.1",
     "@googlemaps/google-maps-services-js": "^3.1.2",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }
